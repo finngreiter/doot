@@ -1,0 +1,102 @@
+* {
+  margin: 0;
+  padding: 0;
+  border: 0;
+  outline: 0;
+  text-decoration: none;
+  font-weight: inherit;
+  font-style: inherit;
+  color: inherit;
+  font-size: 100%;
+  font-family: inherit;
+  vertical-align: baseline;
+  list-style: none;
+  border-collapse: collapse;
+  border-spacing: 0;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+}
+/* Input */
+
+@font-face {
+  font-family: 'sm_font';
+  src: url('../fonts/sm.ttf') format('truetype');
+  font-weight: normal;
+  font-style: normal;
+  font-display: swap;
+}
+
+body {
+  font-size: 14px;
+  font-family: 'sm_font';
+  font-weight: normal;
+  transition: background-color 500ms;
+  overflow: hidden;
+}
+body svg {
+  margin: 0px auto 30px;
+  display: block;
+}
+table {
+  margin: 0px auto 30px;
+  width: 100%;
+}
+table tr td {
+  padding: 5px 10px;
+  transition: background-color 250ms, color 250ms;
+  font-size: 11px;
+  line-height: 20px;
+  position: relative;
+  padding-left: 32px;
+  width: 25%;
+}
+table tr th {
+  padding: 5px 10px;
+  font-size: 11px;
+  line-height: 20px;
+  position: relative;
+  text-align: left;
+  width: 25%;
+}
+table tr td svg {
+  stroke: none;
+  display: inline-block;
+  margin: 0px 15px 0px 0px;
+  position: absolute;
+  left: 8px;
+  top: 6px;
+}
+table tr td span {
+  display: inline-block;
+}
+#debug {
+  font-size: 11px;
+}
+#score {
+  text-align: center;
+  margin-bottom: 30px;
+  font-size: 11px;
+}
+
+#benchmark {
+  height: 300px;
+  margin: calc(50vh - 200px) auto;
+  max-width: 400px;
+}
+
+#distribution {
+  margin-bottom: 30px;
+}
+#distribution > div {
+  clear: both;
+  height: 2px;
+  overflow-y: hidden;
+  margin-bottom: 2px;
+}
+#distribution > div > * {
+  display: block;
+  width: 30px;
+  height: 20px;
+  float: left;
+  transition: background-color 250ms, color 250ms, width 250ms;
+}

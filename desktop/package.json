@@ -1,0 +1,14 @@
+{
+  "name": "doot",
+  "version": "0.0.1",
+  "main": "main.js",
+  "scripts": {
+    "start": "electron ."
+  },
+  "license": "MIT",
+  "devDependencies": {
+    "@electron/remote": "^1.0.2",
+    "electron": "^11.0.4",
+    "electron-packager": "^15.2.0"
+  }
+}
